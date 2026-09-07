@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Henry Tibenkana</title>
+    <meta name="description" content="Welcome to WDD 131, your go-to resource for web development.">
+    <meta name="author" content="Henry Tibenkana">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <p>Welcome to WDD 131! This is the main page of the course. Here you will find resources, assignments, and information related to web development. Stay tuned for updates and make sure to check back regularly for new content.</p>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+        <a href="#">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures">
+            Scripture
+        </a>
+        <a href="#">Final Project</a>
+    </nav>
+    </header>
+    <main>
+        <h1>Henry Tibenkana</h1>
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about">
+                <p>
+                    My name is Henry Tibenkana. I am from Uganda and I am a
+                    passionate music teacher. I enjoy teaching music and
+                    helping young learners develop their musical talents.
+                    I also enjoy playing the guitar, conducting brass bands,
+                    and learning web development.
+                </p>
+            <img src="images/profile.jpg" 
+                    alt="Henry Tibenkana" 
+                    length="260" 
+                    width="200">
+            </div>
+
+            <h3>Uganda</h3>
+            <div class="country">
+                <figure>
+                    <img src="images/uganda-flag.webp" alt="Official Flag of Uganda" length="200" width="113">
+         
+                    <figcaption>
+                    Official Flag of Uganda
+                    </figcaption>
+                </figure>  
+
+                <p>
+                    Uganda is a beautiful country located in East Africa.
+                    It is often called the Pearl of Africa because of its
+                    beautiful landscapes, wildlife, lakes, and rich culture.
+                    Uganda is known for its friendly people and diverse
+                    traditions.
+                </p>
+
+            </div>
+            
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+             <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li> <a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks </a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li> <a href="https://www.udemy.com/"> Udemy</a> </li>
+                <li><a href="#">LoremPiscumImagePlaceholder</a></li>
+             </ul>           
+        </section>
+
+    </main>
+
+    <footer>
+    <p>
+        © <span id="currentyear"></span> Henry Tibenkana | Uganda
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+
 </body>
 </html>
+
