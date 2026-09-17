@@ -1,5 +1,6 @@
-@media (max-width:600px) {
-    nav ul{
+@media (max-width: 600px) {
+
+    nav ul {
         position: absolute;
         top: 70px;
         left: 0;
@@ -8,16 +9,24 @@
         text-align: center;
         background: #004274;
         gap: 0;
-        overflow: hidden;
+
+        display: none;
     }
-    nav ul li{
+
+    nav ul li {
         padding: 20px;
-        padding-top: 0;
     }
-    .menu-icon{
+
+    #menuButton {
         display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
     }
-    #menuList{
-        transition: all 0.5s;
+
+    nav.open ul {
+        display: flex;
     }
 }
