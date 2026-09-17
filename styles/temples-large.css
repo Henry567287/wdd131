@@ -1,33 +1,23 @@
-@media screen and (min-width: 768px) {
-
-}
-
-#menu {
-    display: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-header h2 {
-    margin: 0;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
-    gap: 1rem;
-}
-
-main {
-    max-width: 1100px;
-}
-
-.temple-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
 }

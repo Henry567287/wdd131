@@ -3,93 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+
+    <meta name="description" content="A responsive temple picture album created for WDD 131.">
+    <meta name="author" content="Henrico Kayz">
+
+    <title>Temple Album</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 
-    <script src="scripts/temples.js"></script>
+    <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
-    <header>
-         <h2>Temple Album</h2>
 
-		 <button id="menue" aria-label="open navigation">
-			☰
-		 </button>
-
-        <nav>
+    <header>        
+        <nav id="menuList">
+            <div class="title">Temple Album</div>   
             <ul>
-                <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
-            </ul>
-            
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>                             
+            </ul>  
+            <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>      
         </nav>
     </header>
     <main>
-		<h1>Temple Album</h1>
-		
-		<div class="temple-grid">
-			<figure>
-        <img src="https://massiahilarion.github.io/wdd131/images/lagos_nigeria_temple.jpg" alt="Temple One">
-        <figcaption>Temple One</figcaption>
-    </figure>
+        <h2>Home</h2>
+            <figure>
+                <img src="images/Temple 1.webp" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Temple 2.webp" alt="Columbia South Carolina Temple" loading="lazy">
+                <figcaption>Columbia South Carolina Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.webp" alt="Washington D.C. Temple" loading="lazy">
+                <figcaption>Johannesburg South Africa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.webp" alt="Laie Hawaii Temple" loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.webp" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple6.webp" alt="Salt lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.webp" alt="Provo Utah Rock Canyon Temple" loading="lazy">
+                <figcaption>Provo Utah Rock Canyon Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.webp" alt="Johannesburg South Africa Temple" loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.webp" alt="Laie Hawaii Temple" loading="lazy">
+                <figcaption>Washington D.C Temple</figcaption>
+            </figure>
 
-    <figure>
-        <img src="https://massiahilarion.github.io/wdd131/images/oakland_temple_lds.jpg" alt="Temple Two">
-        <figcaption>Temple Two</figcaption>
-    </figure>
+    </main>
 
-    <figure>
-        <img src="https://massiahilarion.github.io/wdd131/images/salt_lake_temple.jpg" alt="Temple Three">
-        <figcaption>Temple Three</figcaption>
-    </figure>
-
-    <figure>
-        <img src="https://massiahilarion.github.io/wdd131/images/washington_dc_temple_lds.jpg" alt="Temple Four">
-        <figcaption>Temple Four</figcaption>
-    </figure>
-
-    <figure>
-        <img src="https://massiahilarion.github.io/wdd131/images/los_angeles_temple_lds.jpg" alt="Temple Five">
-        <figcaption>Temple Five</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/temple6.webp" alt="Temple Six">
-        <figcaption>Temple Six</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/temple7.webp" alt="Temple Seven">
-        <figcaption>Temple Seven</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/temple8.webp" alt="Temple Eight">
-        <figcaption>Temple Eight</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/temple9.webp" alt="Temple Nine">
-        <figcaption>Temple Nine</figcaption>
-    </figure>
-		</div>
-	</main>
-
-	    <footer>
+    <footer>
         <p>
-            © <span id="currentyear"></span> 🎗️Henry Tibenkna🎗️ | Uganda
+            &copy; <span id="currentyear">2026</span>
+            🎀Henrico Kayz🎀| Uganda
         </p>
 
         <p id="lastModified"></p>
     </footer>
 
 </body>
+</html>
