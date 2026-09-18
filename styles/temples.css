@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif; 
+    font-family: Roboto, sans-serif;
 }
 
-html,body{
+html,
+body {
     background-color: white;
     color: black;
 }
 
 header {
     display: grid;
-    background-color:#315a7d;
+    background-color: #315a7d;
     color: white;
     font-size: 20px;
     margin: 0 auto;
@@ -22,14 +23,7 @@ header {
     color: white;
 }
 
-.hamburger {
-    background: none;
-    border: none;
-    color: wheat;
-    font-size: 2rem;
-}
-
-nav{
+nav {
     padding: 10px 40px;
     display: flex;
     align-items: center;
@@ -39,43 +33,35 @@ nav{
     height: 70px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
 }
+
 nav a:hover {
-    background-color:white;
+    background-color: white;
     border-radius: 5px;
     color: black;
     padding: 10px;
 }
 
-
-menuList::before {
-    content:"☰" ;
-}
-
-#menu.open::before {
-    content: "❌";
-}
-
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -101,7 +87,7 @@ figure img {
 }
 
 figcaption {
-    font-family: Roboto, sans-serif ;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     margin-top: 0.8rem;
     font-size: 1.1rem;
@@ -112,7 +98,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    font-family:Roboto, sans-serif ; ;
+    font-family: Roboto, sans-serif;
 }
 
 footer p {
@@ -122,3 +108,4 @@ footer p {
 #lastModified {
     color: #ffd700;
 }
+
