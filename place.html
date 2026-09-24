@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information about Uganda, including geography and weather.">
+    <title>Uganda</title>
+    <link rel="stylesheet" href="styles/design.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>UGANDA</h1>
+    </header>
+
+    <main>
+        <picture class="hero">
+    <source media="(min-width: 700px)" srcset="images/Uganda-large.webp">
+    <img src="images/Uganda-small.webp"
+         srcset="images/Uganda-small.webp 600w,
+                 images/Uganda-large.webp 1200w"
+         sizes="100vw"
+         alt="landscape in Uganda">
+</picture>
+
+        <section class="data-card">
+            <h2>Data</h2>
+            <dl>
+                <dt><strong>Area:</strong></dt><dd>241,550 sq km</dd>
+                <dt><strong>Population:</strong></dt><dd>45,905,417</dd>
+                <dt><strong>Capital:</strong></dt><dd>Kampala</dd>
+                <dt><strong>Languages:</strong></dt><dd>English, Swahili, Luganda and other local languages</dd>
+                <dt><strong>Currency:</strong></dt><dd>Ugandan Shilling (UGX)</dd>
+                <dt><strong>Time Zone:</strong></dt><dd>UTC+3</dd>
+                <dt><strong>Calling Code:</strong></dt><dd>+256</dd>
+                <dt><strong>Internet TLD:</strong></dt><dd>.ug</dd>
+            </dl>
+        </section>
+
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Partly cloudy weather">
+            <p><strong>Temperature:</strong> <span id="temperature-value">21 °C</span></p>
+            <p><strong>Conditions:</strong> <span>Cloudy</span></p>
+            <p><strong>Wind:</strong> <span id="wind-speed-value">5 km/h</span></p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> 💥 Henry Tibenkana 💥 Uganda</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

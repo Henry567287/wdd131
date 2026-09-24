@@ -1,0 +1,256 @@
+:root {
+    --red: #df0736f9;
+    --green: #008c62;
+    --card: rgb(255 255 255 / 0.84);
+    --text: #222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+}
+
+header {
+    background: var(--red);
+    color: white;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+main {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    border-top: 18px solid var(--green);
+}
+
+.hero {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 600px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.data-card,
+.weather-card {
+    position:absolute;
+    background: var(--card);
+    padding-bottom: 1.25rem;
+    width: 290px;
+    border-radius: 6px;
+}
+
+.data-card {
+    top: 2.5rem;
+    left:1rem;
+
+}
+
+.weather-card {
+    right: 1.5rem;
+    bottom: 2rem;
+}
+
+h2 {
+    background: rgba(40, 205, 147, 0.9);
+    color: white;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.25rem;
+}
+
+dl,
+.weather-card p {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0.45rem;
+    padding: 0 1.25rem;
+}
+
+dt,
+.weather-card p {
+    text-align: right;
+}
+
+dd,
+.weather-card span {
+    text-align: left;
+}
+
+.weather-card img {
+    display: none;
+}
+
+footer {
+    max-width: 1150px;
+    margin: 0 auto;
+    background: var(--red);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    .weather-card h2::after {
+        content: " ⛅";
+        float: right;
+    }
+}
+
+@media (max-width: 699px) {
+    header {
+        padding: 1rem;
+    }
+
+    main {
+        display: block;
+        border-top: 12px solid var(--green);
+    }
+
+    .hero {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .hero img {
+        height: 220px;
+        min-height: 220px;
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    .data-card,
+    .weather-card {
+        position: static;
+        width: 100%;
+        background: white;
+        padding-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .weather-card img {
+        display: block;
+        width: 55px;
+        margin: 0 auto 1rem;
+    }
+
+    .callout {
+        background-color: var(--accent-color);
+        color: white;
+        font-weight: bold;
+    }
+
+    .weather-card h2::after {
+        content: " ⛅";
+        float: right;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .hero,
+    .callout {
+        grid-column: 1 / -1;
+    }
+ 
+    .hero img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    
+
+    .data {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 320px;
+        padding: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: var(--shadow);
+    }
+
+    
+
+    .weather {
+        position: absolute;
+        top: 310px;
+        right: 20px;
+        width: 320px;
+        padding: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: var(--shadow);
+    }
+
+    .data h2,
+    .weather h2 {
+        margin: -1.5rem -1.5rem 1.5rem;
+        padding: 0.8rem 1rem;
+        background-color: var(--green);
+        color: var(--white);
+        text-align: left;
+    }
+
+    
+
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.75rem;
+    }
+
+    
+    .weather-icon {
+        display: none;
+    }
+
+    .data-content p,
+    .weather-content p {
+        margin: 0.7rem 0;
+        gap: 0.5rem;
+    }
+
+    .data-content strong,
+    .weather-content strong {
+        min-width: 115px;
+    }
+
+    .data-content span,
+    .weather-content span {
+        min-width: 145px;
+    }
+
+    footer {
+        padding: 2rem;
+        font-size: 1.05rem;
+    }
+}
