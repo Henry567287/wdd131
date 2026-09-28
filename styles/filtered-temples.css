@@ -10,8 +10,6 @@ body {
 }
 
 
-/* HEADER */
-
 header {
     background-color: #4b126f;
     color: white;
@@ -30,8 +28,6 @@ header h2 {
 }
 
 
-/* HAMBURGER */
-
 #menu-button {
     display: block;
     margin-left: auto;
@@ -46,8 +42,6 @@ header h2 {
     cursor: pointer;
 }
 
-
-/* NAVIGATION */
 
 nav {
     display: none;
@@ -71,9 +65,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-
-/* MAIN */
-
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -86,16 +77,12 @@ main h1 {
 }
 
 
-/* TEMPLE GRID */
-
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-
-/* TEMPLE CARD */
 
 figure {
     margin: 0;
@@ -132,8 +119,6 @@ figure img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-
-/* FOOTER */
 
 footer {
     margin-top: 3rem;
