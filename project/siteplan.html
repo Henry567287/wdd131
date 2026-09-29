@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Site plan for the Explore Uganda website project.">
+
+    <meta name="author" content="Henry Tibenkana">
+
+    <title>Explore Uganda - Site Plan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #174A2A;
+            --gold: #D9A441;
+            --cream: #F7F3E8;
+            --white: #FFFFFF;
+            --dark: #222222;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            color: var(--dark);
+            background-color: var(--cream);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--green);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            background-color: var(--white);
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-left: 5px solid var(--gold);
+        }
+
+        h2 {
+            color: var(--green);
+        }
+
+        .color-box {
+            display: inline-block;
+            padding: 1rem;
+            margin: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        .green {
+            background-color: var(--green);
+            color: white;
+        }
+
+        .gold {
+            background-color: var(--gold);
+            color: black;
+        }
+
+        .cream {
+            background-color: var(--cream);
+        }
+
+        .wireframe {
+            background-color: #eee;
+            border: 2px solid var(--green);
+            padding: 1rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--green);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Uganda</h1>
+        <p>Website Planning Document</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. Site Name</h2>
+
+            <h3>Explore Uganda</h3>
+
+            <p>
+                Explore Uganda is a website designed to introduce visitors
+                to interesting destinations and places of interest throughout
+                Uganda.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Site Purpose</h2>
+
+            <p>
+                The purpose of Explore Uganda is to provide visitors with
+                useful information about selected destinations in Uganda.
+                The website will present destination descriptions,
+                locations, activities, photographs, and categories.
+            </p>
+
+            <p>
+                Visitors will also be able to filter destinations using
+                JavaScript and submit destination suggestions through
+                an online form.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Scenarios</h2>
+
+            <ul>
+                <li>
+                    Which places in Uganda can I visit if I am interested
+                    in wildlife and nature?
+                </li>
+
+                <li>
+                    Where can I find information about lakes and scenic
+                    destinations in Uganda?
+                </li>
+
+                <li>
+                    How can I suggest a destination to be added to the
+                    website?
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Color Schema</h2>
+
+            <div class="color-box green">
+                Dark Green #174A2A
+            </div>
+
+            <div class="color-box gold">
+                Gold #D9A441
+            </div>
+
+            <div class="color-box cream">
+                Cream #F7F3E8
+            </div>
+
+            <p>
+                Dark green will be used for the header, navigation,
+                headings, and footer. Gold will be used for buttons,
+                highlights, and accents. Cream will be used as the
+                primary background color.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Typography</h2>
+
+            <h3>Montserrat</h3>
+
+            <p>
+                Montserrat will be used for headings and important
+                titles.
+            </p>
+
+            <h3>Roboto</h3>
+
+            <p>
+                Roboto will be used for paragraphs, navigation,
+                forms, and general content.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Wireframes</h2>
+
+            <h3>Mobile View</h3>
+
+            <div class="wireframe">
+                <p>HEADER + HAMBURGER MENU</p>
+                <p>HERO IMAGE</p>
+                <p>INTRODUCTION</p>
+                <p>FEATURED DESTINATIONS</p>
+                <p>FOOTER</p>
+            </div>
+
+            <h3>Desktop View</h3>
+
+            <div class="wireframe">
+                <p>HEADER + NAVIGATION</p>
+                <p>LARGE HERO IMAGE</p>
+                <p>INTRODUCTION</p>
+                <p>THREE DESTINATION CARDS</p>
+                <p>FOOTER</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Explore Uganda - WDD 131 Project</p>
+    </footer>
+
+</body>
+
+</html>
