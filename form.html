@@ -20,138 +20,90 @@
     </header>
 
     <main>
-        <form method="get" action="review.html">
+      <form method="get" action="review.html">
 
-            <fieldset>
-                <legend>Product Information</legend>
+    <fieldset>
 
-                <label for="product">
-                    Product Name
-                </label>
+        <label for="product">Product Name</label>
 
-                <select id="product" name="product" required>
-                    <option value="" disabled selected>Select a Product ...</option>
-                </select>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>
+                Select a Product ...
+            </option>
+        </select>
 
-                <label>
-                    Overall Rating
-                </label>
-                <div class="rating">
-                        <label for="rating1">
-                            <input type="radio" id="rating1" name="rating" value="1" required>
-                            <span>☆</span>
-                            <span class="rating-number">1</span>
-                        </label>
-                    
-                        <label for="rating2">
-                            <input type="radio" id="rating2" name="rating" value="2" required>
-                            <span>☆</span>
-                            <span class="rating-number">2</span>
-                        </label>
-                    
-                        <label for="rating3">
-                            <input type="radio" id="rating3" name="rating" value="3" required>
-                            <span>☆</span>
-                            <span class="rating-number">3</span>
-                        </label>
-                    
-                        <label for="rating4">
-                            <input type="radio" id="rating4" name="rating" value="4" required>
-                            <span>☆</span>
-                            <span class="rating-number">4</span>
-                        </label>
-                    
-                        <label for="rating5">
-                            <input type="radio" id="rating5" name="rating" value="5" required>
-                            <span>☆</span>
-                            <span class="rating-number">5</span>
-                        </label>
+        <label>Overall Rating</label>
 
-                         <label for="rating6">
-                            <input type="radio" id="rating6" name="rating" value="6" required>
-                            <span>☆</span>
-                            <span class="rating-number">6</span>
-                        </label>
+        <div class="rating">
 
-                        <label for="rating7">
-                            <input type="radio" id="rating7" name="rating" value="7" required>
-                            <span>☆</span>
-                            <span class="rating-number">7</span>
-                        </label>
-                 </div>
-                
-                </label>
+            <label for="rating1">
+                <span>★</span>
+                <input type="radio" id="rating1" name="rating" value="1" required>
+            </label>
 
-                    <label for="rating4">
-                        <input type="radio" id="rating4" name="rating" value="4">
-                        <span>☆</span>
-                        <span class="rating-number">4</span>
-                    </label>
+            <label for="rating2">
+                <span>★★</span>
+                <input type="radio" id="rating2" name="rating" value="2" required>
+            </label>
 
-                    <label for="rating5">
-                        <input type="radio" id="rating5" name="rating" value="5">
-                        <span>☆</span>
-                        <span class="rating-number">5</span>
-                    </label>
-                </div>
+            <label for="rating3">
+                <span>★★★</span>
+                <input type="radio" id="rating3" name="rating" value="3" required>
+            </label>
 
-                <label for="installDate">
-                    Date of Installation
-                </label>
+            <label for="rating4">
+                <span>★★★★</span>
+                <input type="radio" id="rating4" name="rating" value="4" required>
+            </label>
 
-                <input type="date" id="installDate" name="installDate" required>
+            <label for="rating5">
+                <span>★★★★★</span>
+                <input type="radio" id="rating5" name="rating" value="5" required>
+            </label>
 
-            </fieldset>
+        </div>
 
-            <fieldset>
-                <legend>Product Features</legend>
+        <label for="installDate">
+            Date of Installation
+        </label>
 
-                <p>Useful Features</p>
+        <input type="date" id="installDate" name="installDate" required>
 
-                <label for="durable">
-                    <input type="checkbox" id="durable" name="features" value="Durability">
-                    Durability
-                </label>
+    </fieldset>
 
-                <label for="easy">
-                    <input type="checkbox" id="easy" name="features" value="Easy to use">
-                    Easy to use
-                </label>
+    <fieldset>
 
-                <label for="design">
-                    <input type="checkbox" id="design" name="features" value="Design">
-                    Design
-                </label>
+        <p class="field-title">
+            Which features did you find useful in the product?
+        </p>
 
-                <label for="performance">
-                    <input type="checkbox" id="performance" name="features" value="Performance">
-                    Performance
-                </label>
+        <p><em>(Check all that apply)</em></p>
 
-            </fieldset>
+        <!-- checkboxes here -->
 
-            <fieldset>
-                <legend>Your Review</legend>
+    </fieldset>
 
-                <label for="review">
-                    Written Review
-                </label>
+    <fieldset>
 
-                <textarea id="review" name="review" rows="6"
-                    placeholder="Write your review here..."></textarea>
+        <label for="review">
+            Written Review
+            <span class="optional">(Optional)</span>
+        </label>
 
-                <label for="userName">
-                    User Name
-                </label>
+        <textarea id="review" name="review"></textarea>
 
-                <input type="text" id="userName" name="userName"
-                    autocomplete="name">
+        <label for="userName">
+            Your Name
+            <span class="optional">(Optional)</span>
+        </label>
 
-            </fieldset>
+        <input type="text" id="userName" name="userName">
 
-            <input type="submit" value="Submit Review">
+    </fieldset>
 
-        </form>
+    <input type="submit" value="Post Review">
+
+</form>
     </main>
 
     <footer>
