@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f1e8;
+    color: #222;
+}
+
+header {
+    background-color: #174a2a;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+    border: 0;
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+legend {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d9a441;
+    color: #174a2a;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-top: 0.5rem;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+.rating input {
+    margin-bottom: 0.2rem;
+}
+
+.rating span:first-of-type {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.rating-number {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+fieldset:nth-of-type(2) label {
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #174a2a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0e321d;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #d9a441;
+    outline-offset: 2px;
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.confirmation section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.confirmation h2 {
+    color: #174a2a;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #174a2a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0e321d;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #174a2a;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media (min-width: 32rem) {
+
+    main {
+        padding: 0 2rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    input[type="submit"] {
+        width: 50%;
+        display: block;
+        margin: 1.5rem auto 0;
+    }
+}
