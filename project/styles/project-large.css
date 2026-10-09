@@ -1,10 +1,6 @@
-/* ========================================
-   EXPLORE UGANDA - LARGE SCREEN STYLES
-======================================== */
 
 @media (min-width: 48rem) {
-
-    /* HEADER */
+   
     .site-header {
         min-height: 85px;
         padding: 1rem 2rem;
@@ -16,7 +12,6 @@
         white-space: nowrap;
     }
 
-    /* Hide the hamburger button on desktop */
     .menu-button {
         display: none;
     }
@@ -37,7 +32,6 @@
         white-space: nowrap;
     }
 
-    /* MAIN CONTENT */
     main {
         padding: 2.5rem 2rem 3rem;
     }
@@ -56,7 +50,6 @@
         margin-bottom: 2.5rem;
     }
 
-    /* CONTACT LAYOUT */
     .contact-layout {
         grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
         gap: 2rem;
@@ -76,7 +69,6 @@
         min-width: 200px;
     }
 
-    /* REFERENCES PAGE */
     .references {
         padding: 2.5rem;
     }
@@ -85,7 +77,6 @@
         font-size: 2.5rem;
     }
 
-    /* DESTINATIONS PAGE */
     .destination-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 2rem;
@@ -99,27 +90,53 @@
         padding: 3rem 2rem;
     }
 
-    /* HOME PAGE HERO */
+  
     .hero {
-        display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        align-items: stretch;
+    height: 580px;
+    min-height: 580px;
+    display: block;
+    }
+    
+    .hero > img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    max-height: none;
+    object-fit: cover;
+    object-position: center 55%;
     }
 
-    .hero img {
-        height: 100%;
-        min-height: 400px;
-        max-height: 550px;
+    .hero .hero-content {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 6%;
     }
 
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2.5rem;
+    .hero-content h1 {
+    font-size: 4.5rem;
     }
 
-    /* FOOTER */
+    .hero-content p {
+    max-width: 650px;
+    font-size: 1.2rem;
+    }
+
+    .welcome-section {
+    padding: 2.5rem 6%;
+    }
+
+    .welcome-section h2 {
+    font-size: 2.5rem;
+    }
+
+    .featured {
+    padding: 3rem 2rem;
+    }
+
     .footer-content {
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
