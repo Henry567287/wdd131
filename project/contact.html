@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact Explore Uganda and suggest a destination or share your thoughts about Uganda travel experiences.">
+
+    <meta name="author" content="Henry Tibenkana">
+
+    <title>Contact | Explore Uganda</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <a href="index.html" class="logo">
+                Explore Uganda
+            </a>
+
+            <button class="menu-button" id="menuButton" type="button"
+                aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+
+            <h1>Contact Explore Uganda</h1>
+
+            <p>
+                Have a destination you think we should feature?
+                Send us your suggestion.
+            </p>
+
+        </section>
+
+        <section class="contact-layout">
+
+            <div class="contact-information">
+
+                <h2>Share Your Discovery</h2>
+
+                <p>
+                    Uganda has many beautiful places waiting to be
+                    discovered. Use this form to share a destination
+                    or travel idea.
+                </p>
+
+                <p>
+                    Your suggestion will be stored locally in your
+                    browser as part of this website demonstration.
+                </p>
+
+            </div>
+
+            <form id="contactForm">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autocomplete="name">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email">
+
+                <label for="destination">
+                    Destination
+                </label>
+
+                <input type="text"
+                    id="destination"
+                    name="destination"
+                    required>
+
+                <label for="category">
+                    Destination Category
+                </label>
+
+                <select id="category" name="category" required>
+
+                    <option value="" disabled selected>
+                        Select a category
+                    </option>
+
+                    <option value="Wildlife">
+                        Wildlife
+                    </option>
+
+                    <option value="Waterfalls">
+                        Waterfalls
+                    </option>
+
+                    <option value="Lakes">
+                        Lakes
+                    </option>
+
+                    <option value="Mountains">
+                        Mountains
+                    </option>
+
+                    <option value="Culture">
+                        Culture
+                    </option>
+
+                </select>
+
+                <label for="message">
+                    Why should visitors explore this place?
+                </label>
+
+                <textarea id="message"
+                    name="message"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Suggestion
+                </button>
+
+                <p id="formMessage" class="form-message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Explore Uganda</h2>
+                <p>Discover the Pearl of Africa.</p>
+            </div>
+
+            <div>
+                <h2>Quick Links</h2>
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="contact.html">Contact</a>
+                <a href="references.html">References</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="currentyear"></span>
+            Explore Uganda | Henry Tibenkana
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
