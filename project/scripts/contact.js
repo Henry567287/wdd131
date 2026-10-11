@@ -1,89 +1,54 @@
 const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector("#formMessage");
 
+function showMessage(message, isSuccess) {
+  if (!formMessage) return;
+  formMessage.textContent = message;
+  formMessage.classList.toggle("message-success", isSuccess);
+  formMessage.classList.toggle("message-error", !isSuccess);
+  formMessage.setAttribute("role", "status");
+}
+
 function handleFormSubmit(event) {
-    event.preventDefault();
+  event.preventDefault();
+  if (!contactForm || !formMessage) return;
 
-    if (!contactForm || !formMessage) {
-        return;
-    }
+  const formData = new FormData(contactForm);
+  const suggestion = {
+    name: String(formData.get("name") || "").trim(),
+    email: String(formData.get("email") || "").trim(),
+    destination: String(formData.get("destination") || "").trim(),
+    category: String(formData.get("category") || ""),
+    message: String(formData.get("message") || "").trim(),
+    dateSubmitted: new Date().toISOString()
+  };
 
-    const formData = new FormData(contactForm);
+  if (!suggestion.name || !suggestion.email || !suggestion.destination || !suggestion.category || !suggestion.message) {
+    showMessage("Please complete every required field.", false);
+    return;
+  }
 
-    const suggestion = {
-        name: formData.get("name").trim(),
-        email: formData.get("email").trim(),
-        destination: formData.get("destination").trim(),
-        category: formData.get("category"),
-        message: formData.get("message").trim(),
-        dateSubmitted: new Date().toISOString()
-    };
-
-    // Check that all required fields contain values
-    if (
-        !suggestion.name ||
-        !suggestion.email ||
-        !suggestion.destination ||
-        !suggestion.category ||
-        !suggestion.message
-    ) {
-        showMessage(
-            "Please complete all required fields.",
-            false
-        );
-        return;
-    }
-
-    saveSuggestion(suggestion);
+  saveSuggestion(suggestion);
 }
 
 function saveSuggestion(suggestion) {
-    try {
-        const savedSuggestions = JSON.parse(
-            localStorage.getItem("ugandaSuggestions")
-        ) || [];
+  try {
+    const storedValue = localStorage.getItem("ugandaSuggestions");
+    const savedSuggestions = storedValue ? JSON.parse(storedValue) : [];
 
-        // Add the new suggestion to the array
-        savedSuggestions.push(suggestion);
-
-        localStorage.setItem(
-            "ugandaSuggestions",
-            JSON.stringify(savedSuggestions)
-        );
-
-        showMessage(
-            `Thank you, ${suggestion.name}! Your suggestion for ${suggestion.destination} has been saved in this browser.`,
-            true
-        );
-
-        // Clear the form after successful saving
-        contactForm.reset();
-
-    } catch (error) {
-        showMessage(
-            "Sorry, your suggestion could not be saved. Please check your browser storage settings.",
-            false
-        );
-    }
-}
-
-function showMessage(message, success) {
-    if (!formMessage) {
-        return;
+    if (!Array.isArray(savedSuggestions)) {
+      throw new Error("Saved suggestions are not in the expected format.");
     }
 
-    formMessage.textContent = message;
-
-    formMessage.style.color = success
-        ? "#174a2a"
-        : "#b00020";
-
-    formMessage.setAttribute("role", "status");
+    savedSuggestions.push(suggestion);
+    localStorage.setItem("ugandaSuggestions", JSON.stringify(savedSuggestions));
+    showMessage(`Thank you, ${suggestion.name}! Your suggestion for ${suggestion.destination} has been saved in this browser.`, true);
+    contactForm.reset();
+  } catch (error) {
+    showMessage("Your suggestion could not be saved. Please check your browser storage settings and try again.", false);
+  }
 }
 
 if (contactForm) {
-    contactForm.addEventListener(
-        "submit",
-        handleFormSubmit
-    );
+  contactForm.addEventListener("submit", handleFormSubmit);
 }
