@@ -1,154 +1,18 @@
-
 @media (min-width: 48rem) {
-   
-    .site-header {
-        min-height: 85px;
-        padding: 1rem 2rem;
-        flex-wrap: nowrap;
-    }
-
-    .logo {
-        font-size: 1.6rem;
-        white-space: nowrap;
-    }
-
-    .menu-button {
-        display: none;
-    }
-
-    /* Display navigation horizontally */
-    #mainNav,
-    #mainNav.open {
-        display: flex;
-        width: auto;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 0.5rem;
-    }
-
-    #mainNav a {
-        padding: 0.7rem 1rem;
-        white-space: nowrap;
-    }
-
-    main {
-        padding: 2.5rem 2rem 3rem;
-    }
-
-    h1 {
-        font-size: 2.6rem;
-    }
-
-    h2 {
-        font-size: 1.7rem;
-    }
-
-    /* PAGE HEADING */
-    .page-heading {
-        padding: 3rem 2rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .contact-layout {
-        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-        gap: 2rem;
-        align-items: stretch;
-    }
-
-    .contact-information {
-        padding: 2.25rem;
-    }
-
-    #contactForm {
-        padding: 2.25rem;
-    }
-
-    #contactForm button[type="submit"] {
-        align-self: flex-start;
-        min-width: 200px;
-    }
-
-    .references {
-        padding: 2.5rem;
-    }
-
-    .references h1 {
-        font-size: 2.5rem;
-    }
-
-    .destination-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 2rem;
-    }
-
-    .destination-card img {
-        height: 240px;
-    }
-
-    .page-introduction {
-        padding: 3rem 2rem;
-    }
-
-  
-    .hero {
-    height: 580px;
-    min-height: 580px;
-    display: block;
-    }
-    
-    .hero > img {
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    max-height: none;
-    object-fit: cover;
-    object-position: center 55%;
-    }
-
-    .hero .hero-content {
-    display: flex;
-    position: absolute;
-    inset: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 3rem 6%;
-    }
-
-    .hero-content h1 {
-    font-size: 4.5rem;
-    }
-
-    .hero-content p {
-    max-width: 650px;
-    font-size: 1.2rem;
-    }
-
-    .welcome-section {
-    padding: 2.5rem 6%;
-    }
-
-    .welcome-section h2 {
-    font-size: 2.5rem;
-    }
-
-    .featured {
-    padding: 3rem 2rem;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        padding: 0 1rem 2rem;
-    }
-
-    .footer-content h2 {
-        font-size: 1.3rem;
-    }
-
-    .copyright,
-    #lastModified {
-        text-align: center;
-    }
+  .site-header { min-height: 78px; flex-wrap: nowrap; padding-inline: max(2rem, calc((100% - 1200px) / 2)); }
+  .logo { font-size: 1.6rem; }
+  .menu-button { display: none; }
+  .main-nav, .main-nav.open { display: flex; flex-basis: auto; flex-direction: row; align-items: center; justify-content: flex-end; gap: .35rem; }
+  .main-nav a { padding: .7rem .9rem; white-space: nowrap; }
+  .hero, .hero-content { min-height: 580px; }
+  .hero-content { padding-inline: max(2rem, calc((100% - 1100px) / 2)); }
+  .hero-content p { font-size: 1.2rem; }
+  .welcome-section { padding-block: 3rem; }
+  .featured { padding-bottom: 4rem; }
+  .destination-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.6rem; }
+  .destination-card img { height: 230px; }
+  .page-introduction { padding: 3rem 2rem; }
+  .contact-layout { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: start; gap: 2rem; }
+  .footer-content { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .asset-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
