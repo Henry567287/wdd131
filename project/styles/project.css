@@ -476,6 +476,7 @@ textarea {
 .references ul {
   margin: 0.5rem 0 1.3rem;
   padding-left: 1.5rem;
+  list-style: none;
 }
 
 .references li {
